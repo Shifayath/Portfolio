@@ -1,0 +1,885 @@
+
+
+#main {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-bottom: 12rem;
+}
+
+#main>h1 {
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    width: 70%;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 8rem;
+    position: relative;
+    z-index: 99;
+}
+
+
+#main>h1::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 16px;
+    bottom: 0;
+    left: 50%;
+    bottom: -5px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    transform: translate(-50%, 0);
+    background-size: cover;
+}
+
+#nav {
+    width: 100%;
+    height: 100px;
+    /* position: fixed;
+    top: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+#nav #part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav #part2 a {
+    text-decoration: none;
+    color: #222;
+    margin: 20px;
+    font-family: system-ui;
+}
+
+#nav #part2 a:nth-last-child(1) {
+    padding: 7px 18px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav #part2 a:nth-last-child(1) #green {
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    transition: left 0.4s ease;
+}
+
+#nav #part2 a:nth-last-child(1) h5 {
+    font-weight: 500;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: system-ui;
+}
+
+#nav #part2 a:nth-last-child(1):hover #green {
+    left: 0;
+}
+
+#nav h1 {
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 20px;
+}
+
+#nav h1::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: springgreen;
+    border-radius: 50%;
+    top: 14%;
+    left: 20.9%;
+}
+
+#main #img {
+    position: absolute;
+    height: 400px;
+    width: 280px;
+    left: 4%;
+    top: 35%;
+}
+
+#main #img1 {
+    position: absolute;
+    height: 270px;
+    width: 353px;
+    right: 27%;
+    top: 38%;
+}
+
+#main #img2 {
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    right: 7%;
+    bottom: -35%;
+}
+
+#main img {
+    transition: margin 0.4s ease;
+}
+
+#main img:hover {
+    margin-top: -40px;
+}
+
+#page2 {
+    height: 70vh;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+#page2 h5 {
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+#page2 h1 {
+    font-size: 49px;
+    font-weight: 100;
+    margin: 25px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 70%;
+    text-align: center;
+    gap: 20px;
+}
+
+#about-us {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#about-us>h4 {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+#greendiv {
+    height: 40px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+#about-us img {
+    rotate: 90deg;
+    height: 50px;
+}
+
+#page2>h1::after {
+    background-size: cover;
+    position: absolute;
+    content: '';
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    width: 18%;
+    height: 75px;
+    left: 40%;
+    top: 53%;
+}
+
+
+
+#page2>h5::before {
+    position: absolute;
+    top: 20%;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: springgreen;
+    left: 31%;
+}
+
+#page3 {
+    height: 130vh;
+    display: flex;
+}
+
+#page3left {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+#page3right {
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+
+}
+
+#page3right>h3 {
+    width: 83%;
+    font-size: 70px;
+}
+
+#page3right #page3right-contentdiv {
+    width: 75%;
+    font-size: 25px;
+    line-height: 1.8;
+    margin: 1.5rem 0rem;
+}
+
+#page3right-profilediv {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#page3right-profilediv-first {
+    display: flex;
+    width: 45%;
+}
+
+#page3right-profilediv-first div {
+    font-size: 30px;
+}
+
+#page3right-profilediv #profile {
+    width: 77px;
+    height: 77px;
+}
+
+#page3right-profilediv #page3right-Sevicediv {
+    font-size: 25px;
+    border: 1px solid #000;
+    border-radius: 45px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3right-Sevicediv div {
+    text-align: center;
+    width: 60%;
+}
+
+#page3left #page3left-img {
+    position: absolute;
+    width: 150px;
+    height: 400px;
+    top: 1.5rem;
+    left: 0;
+}
+
+#page3left #page3left-img1 {
+    position: absolute;
+    width: 340px;
+    height: 200px;
+    top: 1.5rem;
+    left: 11rem;
+}
+
+#page3left #page3left-img2 {
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    top: 24rem;
+    left: -6rem;
+}
+
+#page3left #page3left-img3 {
+    position: absolute;
+    width: 450px;
+    height: 550px;
+    left: 11rem;
+    top: 14rem;
+}
+
+#page4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    margin: 5rem 0rem;
+}
+
+#page4 #page4-Heading {
+    width: 71%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+#page4 #page4-Heading::after {
+    content: '';
+    position: absolute;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    background-size: cover;
+    width: 15%;
+    height: 86px;
+    top: 1%;
+    left: 23%;
+}
+
+#page4 #page4-brands {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    width: -25%;
+    width: 90%;
+}
+
+#page4 #page4-brands img {
+    width: 145px;
+    height: 50px;
+}
+
+#page5 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#page5-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#page5-img #page5-img1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    width: 500px;
+    height: 400px;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/Golf.jpeg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1635867985&s=5e7cee6801a656523b56b64a34d04786);
+    background-size: cover;
+    background-position: center;
+}
+
+#page5-img #page5-img2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    width: 500px;
+    height: 400px;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/work-thumbnail-03.jpg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1627573623&s=efbebf8d2134c057c66886c970e18069);
+    background-size: cover;
+    background-position: center;
+}
+
+#page5-img .page5-img-back {
+    width: 180px;
+    height: 50px;
+    filter: invert(1);
+}
+
+.page5-wording {
+    font-size: 49px;
+    color: #fff;
+}
+
+
+.page5-button {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.page5-button h4 {
+    color: #fff;
+    font-size: 28px;
+}
+
+.page5-button>div {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+.page5-button>div>img {
+    filter: invert(1);
+}
+
+
+#page5right-profilediv #page5right-Sevicediv {
+    font-size: 26px;
+    border: 1px solid #000;
+    border-radius: 45px;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 50px;
+}
+
+#page5right-Sevicediv div {
+    text-align: center;
+    width: 60%;
+}
+
+#page5right-profilediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+#page5right-profilediv-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page5right-profilediv-first div {
+    font-size: 30px;
+}
+
+#page5right-profilediv #profile {
+    width: 77px;
+    height: 77px;
+}
+
+#page6 {
+    height: 105vh;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    width: 962px;
+    height: 770px;
+}
+
+.slidediv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.slidediv img {
+    width: 100px;
+    height: 100px;
+}
+
+.slidediv h1 {
+    font-size: 70px;
+}
+
+.highlites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    position: relative;
+}
+
+.director {
+    font-size: 27px;
+}
+
+.director::before {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: springgreen;
+    border-radius: 50%;
+    top: 8px;
+    left: 36%;
+
+}
+
+.director1 {
+    font-size: 27px;
+}
+
+.director1::before {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: springgreen;
+    border-radius: 50%;
+    top: 8px;
+    left: 35%;
+}
+
+.director2 {
+    font-size: 27px;
+}
+
+.director2::before {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: springgreen;
+    border-radius: 50%;
+    top: 8px;
+    left: 38%;
+
+}
+
+.director3 {
+    font-size: 27px;
+}
+
+.director3::before {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: springgreen;
+    border-radius: 50%;
+    top: 8px;
+    left: 27%;
+
+}
+
+.director4 {
+    font-size: 27px;
+}
+
+.director4::before {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: springgreen;
+    border-radius: 50%;
+    top: 8px;
+    left: 39%;
+
+}
+
+
+.brand {
+    font-size: 27px;
+    color: rgba(140, 140, 140);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: springgreen;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+#page7 {
+    width: 100%;
+    height: 140vh;
+}
+
+#content-div {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+#content-div #contact {
+    width: 800px;
+    height: 100%;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-239.jpg?w=1200&h=394&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002673&s=a8225dd79a8eb0d05ce0db6b2a5efd03);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: -10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    filter: brightness(0.8)
+}
+
+#contact #Overalay {
+    background-color: rgb(51 26 12 / 40%);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+#contact #contact-info {
+    font-size: 36px;
+    color: #fff;
+    position: relative;
+    font-family: system-ui;
+    text-align: center;
+}
+
+#contact #contact-info::before {
+    content: '';
+    position: absolute;
+    width: 135px;
+    height: 10px;
+    top: 29%;
+    left: 11%;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+}
+
+
+#contact #page7right-Sevicediv {
+    font-size: 26px;
+    border: 1px solid #fff;
+    border-radius: 45px;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 50px;
+    color: #fff;
+}
+
+
+#page7right-profilediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+#page7right-profilediv-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page7right-profilediv-first div {
+    font-size: 30px;
+}
+
+#page7right-profilediv #profile {
+    width: 77px;
+    height: 77px;
+}
+
+#footer {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    padding: 13rem 3rem 0rem 3rem;
+}
+
+#footerContent {
+    width: 100%;
+    height: 100%;
+}
+
+#footerContent #footer-S1 {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff
+}
+
+#footerContent #footer-S2 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    border-top: 1px solid #fff;
+}
+
+#footerContent #footer-S2 img{
+    width: 20px;
+    height: 20px;
+}
+
+#footerContent #footer-S1 #footerS1-top {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#footerContent #footer-S1 #footerS1-top h1 {
+    font-size: 55px;
+    font-family: cursive;
+}
+
+#footerContent #footer-S1 #footerS1-top #footerS1-top-div {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footerContent #footer-S1 #footerS1-top #footerS1-top-div>span {
+    width: 50%;
+    height: 60%;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footerContent #footer-S1 #footerS1-bottom {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+}
+
+#footerContent #footer-S1 #footerS1-bottom #footer-S1-bottom-div1,
+#footerContent #footer-S1 #footerS1-bottom #footer-S1-bottom-div2,
+#footerContent #footer-S1 #footerS1-bottom #footer-S1-bottom-div3,
+#footerContent #footer-S1 #footerS1-bottom #footer-S1-bottom-div4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: monospace;
+    color:rgb(255 255 255 / 62%)
+}
+
+#footerContent #footer-S1 #footerS1-bottom div:nth-child(1) {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: monospace;
+    color: #fff;
+}
+
+#footerContent #footer-S1 #footerS1-bottom #footer-S1-bottom-div4 {
+width: 130px;
+height: 100%;
+}
+#footerContent #footer-S1 #footerS1-bottom #footer-S1-bottom-div4 div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#footerContent #footer-S1 #footerS1-bottom #footer-S1-bottom-div4 div:nth-child(1) {
+height: 74px;
+}
+
+#footerContent #footer-S1 #footerS1-bottom #footer-S1-bottom-div4 div:nth-child(2) {
+    height: 130px;
+}
+
+#footerContent #footer-S1 #footerS1-bottom #footer-S1-bottom-div4 div:nth-child(3) {
+    height: 50px;
+}
+
+
+#footer-S2 div:nth-child(1){
+   font-size: 25px;
+}
+
+#footer-S2 div:nth-child(1)::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: springgreen;
+    border-radius: 50%;
+    left: 10.7%;
+    position: absolute;
+    top: 52%;
+}
+
+#footer-S2 div:nth-child(2){
+    width: 39%;
+}
+
+
+#footer-S2 div:nth-child(3){
+    width: 6%;
+}
+
+
+#footer-S2 div:nth-child(4){
+    width: 13%;
+}
+

@@ -1,0 +1,54 @@
+/* styles/HighlightText.module.css */
+
+@keyframes highlight-animation {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+  
+  .highlightText {
+    font-family: sans-serif;
+    background: linear-gradient(to right, 
+      rgba(105, 90, 166, 0), 
+      rgba(105, 90, 166, 0.35), 
+      rgba(123, 104, 238, 0.5), 
+      rgba(173, 134, 255, 0.5), 
+      rgba(123, 104, 238, 0.5), 
+      rgba(105, 90, 166, 0.35), 
+      rgba(105, 90, 166, 0));
+    background-size: 300% 100%; /* Increase background size for smoother transition */
+    background-position: left;
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text color transparent so background shows through */
+    animation: highlight-animation 8s linear infinite; /* Animation duration and type */
+    text-align: center;
+    width: 100%;
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .welcome {
+    font-family: 'Raleway', sans-serif; /* Font for the welcome text */
+    font-size: 10rem; /* Adjust as needed */
+    font-weight: bold; /* Adjust as needed */
+  }
+  
+  .subtitle {
+    font-family: 'Grey Qo', serif; /* Font for the author text */
+    font-size: 2.5rem; /* Adjust size to be smaller */
+    margin-top: 0.5rem; /* Space between lines */
+  }
+  
+  .Container {
+    background-color: #000;
+     overflow: hidden;
+      position: relative;
+  }
+  .Container::-webkit-scrollbar {
+    display: none;
+  }
