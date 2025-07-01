@@ -15,6 +15,7 @@
     "caniuse-lite": "^1.0.30001726",
     "gsap": "^3.12.5",
     "locomotive-scroll": "^5.0.0-beta.15",
+    "mongodb": "^6.17.0",
     "mongoose": "^8.5.2",
     "next": "14.2.5",
     "nodemailer": "^6.9.14",

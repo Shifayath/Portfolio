@@ -13,7 +13,6 @@ export default function RootLayout({ children , dataLoaded}) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      
         {children}
         </body>
     </html>
