@@ -1,36 +1,38 @@
-/* styles/HighlightText.module.css */
+.highlightText {
+  font-family: sans-serif;
+  background: linear-gradient(to right, 
+  rgba(255, 167, 0, 0.5),  /* #ffa700 */
+  rgba(214, 45, 32, 0.5),  /* #d62d20 */
+  rgba(0, 87, 231, 0.35),  /* #0057e7 */
+    rgba(0, 135, 68, 0),     /* #008744 */
+    rgba(214, 45, 32, 0.5),  /* #d62d20 */
+    rgba(0, 87, 231, 0.35),  /* #0057e7 */
+    rgba(0, 135, 68, 0));    /* #008744 */
+  background-size: 300% 100%; /* Increase background size for smoother transition */
+  background-position: left;
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text color transparent so background shows through */
+  animation: highlight-animation 8s ease-in-out infinite; /* Smooth animation */
+  text-align: center;
+  width: 100%;
+  height: 99vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
 @keyframes highlight-animation {
-    0% {
-      background-position: 0% 0%;
-    }
-    100% {
-      background-position: 100% 0%;
-    }
-  }
-  
-  .highlightText {
-    font-family: sans-serif;
-    background: linear-gradient(to right, 
-      rgba(105, 90, 166, 0), 
-      rgba(105, 90, 166, 0.35), 
-      rgba(123, 104, 238, 0.5), 
-      rgba(173, 134, 255, 0.5), 
-      rgba(123, 104, 238, 0.5), 
-      rgba(105, 90, 166, 0.35), 
-      rgba(105, 90, 166, 0));
-    background-size: 300% 100%; /* Increase background size for smoother transition */
-    background-position: left;
-    -webkit-background-clip: text; /* Clip the background to the text */
-    -webkit-text-fill-color: transparent; /* Make the text color transparent so background shows through */
-    animation: highlight-animation 8s linear infinite; /* Animation duration and type */
-    text-align: center;
-    width: 100%;
-    height: 99vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
+0% {
+  background-position: left;
+}
+50% {
+  background-position: right;
+}
+100% {
+  background-position: left;
+}
+}
+
   
   .welcome {
     font-family: 'Raleway', sans-serif; /* Font for the welcome text */
@@ -44,11 +46,16 @@
     margin-top: 0.5rem; /* Space between lines */
   }
   
-  .Container {
-    background-color: #000;
-     overflow: hidden;
-      position: relative;
-  }
-  .Container::-webkit-scrollbar {
-    display: none;
-  }
+.loadingcontainer {
+  background-color: #212529;
+  width:100%;
+  height:100vh
+}
+
+.Container{
+  background-color: #dbdbdb;
+}
+
+.Container::-webkit-scrollbar {
+  display: none;
+}

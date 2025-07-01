@@ -47,20 +47,44 @@ function Contact() {
             <Form.Item
               name="name"
               label="Name"
-              rules={[{ required: true, message: 'Please enter your name' }]}
+              rules={[
+                { required: true, message: 'Please enter your name' },
+                { min: 5, message: 'Name must be at least 5 characters' },
+                {
+                  validator: (_, value) => {
+                    // Basic input injection check
+                    if (value && /[<>"'%;()&+]/.test(value)) {
+                      return Promise.reject('Invalid characters detected in name');
+                    }
+                    return Promise.resolve();
+                  }
+                }
+              ]}
             >
-              <Input />
+              <Input maxLength={50} />
             </Form.Item>
 
             <Form.Item
               name="email"
               label="Email"
               rules={[
-                { type: 'email', message: 'Please enter a valid email address' },
-                { required: true, message: 'Please enter your email' }
+                { required: true, message: 'Please enter your email' },
+                {
+                  pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                  message: 'Please enter a valid email address',
+                },
+                {
+                  validator: (_, value) => {
+                    // Basic input injection check
+                    if (value && /[<>"'%;()&+]/.test(value)) {
+                      return Promise.reject('Invalid characters detected in email');
+                    }
+                    return Promise.resolve();
+                  }
+                }
               ]}
             >
-              <Input />
+              <Input maxLength={100} />
             </Form.Item>
 
             <Form.Item
@@ -68,18 +92,42 @@ function Contact() {
               label="Phone"
               rules={[
                 { required: true, message: 'Please enter your phone number' },
-                { pattern: /^\d{10}$/, message: 'Phone number must be 10 digits' }
+                {
+                  pattern: /^\d{10}$/,
+                  message: 'Phone number must be exactly 10 digits',
+                },
+                {
+                  validator: (_, value) => {
+                    // Basic input injection check
+                    if (value && /[<>"'%;()&+a-zA-Z]/.test(value)) {
+                      return Promise.reject('Invalid characters detected in phone number');
+                    }
+                    return Promise.resolve();
+                  }
+                }
               ]}
             >
-              <Input />
+              <Input maxLength={10} type="tel" pattern="\d*" />
             </Form.Item>
 
             <Form.Item
               name="message"
               label="Message"
-              rules={[{ required: true, message: 'Please enter your message' }]}
+              rules={[
+                { required: true, message: 'Please enter your message' },
+                { min: 10, message: 'Message must be at least 10 characters' },
+                {
+                  validator: (_, value) => {
+                    // Basic input injection check
+                    if (value && /[<>"'%;()&+]/.test(value)) {
+                      return Promise.reject('Invalid characters detected in message');
+                    }
+                    return Promise.resolve();
+                  }
+                }
+              ]}
             >
-              <Input.TextArea rows={4} />
+              <Input.TextArea rows={4} maxLength={500} />
             </Form.Item>
 
             <Form.Item>

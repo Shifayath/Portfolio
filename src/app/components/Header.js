@@ -12,7 +12,6 @@ function Header() {
         </h1>
         <div className="header-subtitle" >I'm a <div><span>React Developer</span></div>
           </div>
-        <button className="btn btn-primary" >Scroll to View More</button>
       </div>
     </header>
   );

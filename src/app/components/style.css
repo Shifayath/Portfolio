@@ -236,7 +236,6 @@ sup {
 
 /* Skills Section */
 .skills {
-  padding: 80px 20px;
   text-align: center;
 }
 
@@ -254,8 +253,8 @@ sup {
 }
 
 .skills-category {
-  width: 40%;
-  height: 470px;
+  width: 75%;
+  height: auto;
   margin-bottom: 50px;
   padding: 20px;
   border-radius: 10px;
@@ -264,6 +263,7 @@ sup {
 
 .skills-wraper{
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 gap:1rem;
@@ -12336,8 +12336,7 @@ pre .code {
 
 /* sections */
 .section {
-  padding: 70px 10px;
-  margin: 7.5rem 0rem 7.5rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .section .section-title {
