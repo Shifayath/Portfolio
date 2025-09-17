@@ -67,18 +67,14 @@ function Services() {
             </div>
             <div className="skill-item">
               <img
-                width="35px"
-                height="35px"
-                src="https://vitejs.dev/logo-with-shadow.png"
-              />
-              <h4>Chrome DevTools</h4>
-            </div>
-            <div className="skill-item">
-              <img
                 width="100px"
                 height="50px"
                 src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2018/02/chrome-devtools.jpg?fit=1200%2C600&ssl=1"
               />
+              <h4>Chrome DevTools</h4>
+            </div>
+            <div className="skill-item">
+              <img width="35px" height="35px" src="/imgs/Vite.js.png" />
               <h4>Vite</h4>
             </div>
             <div className="skill-item">

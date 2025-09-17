@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./style.css";
 
-function Portfolio({landingPages, firebaseProjects}) {
+function Portfolio({landingPages, firebaseProjects,figmaDesigns}) {
   const [type, setType] = useState("Landing Pages");
   const highlightRef = useRef(null);
   const segmentsRef = useRef({});
@@ -26,7 +26,7 @@ function Portfolio({landingPages, firebaseProjects}) {
   };
 
   const projectList =
-    type === "Landing Pages" ? landingPages : firebaseProjects;
+    type === "Landing Pages" ? landingPages : type === "React Projects" ? firebaseProjects :  figmaDesigns;
 
   return (
     <section className="section" id="blog">
@@ -35,7 +35,7 @@ function Portfolio({landingPages, firebaseProjects}) {
         <h6 className="section-title mb-6">Portfolio</h6>
 
         <div className="segmented-control">
-          {["Landing Pages", "React Projects"].map((label) => (
+          {["Landing Pages", "React Projects", "Figma Designs"].map((label) => (
             <button
               key={label}
               ref={(el) => (segmentsRef.current[label] = el)}
@@ -58,7 +58,7 @@ function Portfolio({landingPages, firebaseProjects}) {
               className={"card"}
             >
               <img src={card.image} alt="Card" className="cardImage" />
-              <p className="cardDescription">{card.description}</p>
+              <span style={{fontSize: "14px",color : "#000"}}>{card.description}</span>
             </a>
           ))}
         </div>

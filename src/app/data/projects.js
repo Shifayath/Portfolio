@@ -99,3 +99,57 @@ export const FIREBASEPROJECTS = [
     link: "https://userefgame.web.app",
   },
 ];
+
+
+
+
+export const FIGMADESIGNS = [
+  {
+    id: 1,
+    image: "https://i.ibb.co/SX2fSQ7b/1735672230835.jpg",
+    description: "A user-friendly mobile home screen design with a clean and intuitive interface",
+    link: "https://i.ibb.co/SX2fSQ7b/1735672230835.jpg",
+  },
+  {
+    id: 2,
+    image: "https://i.ibb.co/j9tjGvNS/1735672230209.jpg",
+    description: "A futuristic design concept for a gaming console product showcase",
+    link: "https://i.ibb.co/j9tjGvNS/1735672230209.jpg",
+  },
+  {
+    id: 3,
+    image: "https://i.ibb.co/xSPhG36h/1735672229208.jpg",
+    description: "A user-friendly mobile home screen design with a clean and intuitive interface",
+    link: "https://i.ibb.co/xSPhG36h/1735672229208.jpg",
+  },
+  {
+    id: 4,
+    image: "https://i.ibb.co/d0pHktSg/1735672229218.jpg",
+    description: "An interactive pizza ordering UI with a simple and engaging flow",
+    link: "https://i.ibb.co/d0pHktSg/1735672229218.jpg",
+  },
+  {
+    id: 5,
+    image: "https://i.ibb.co/B20WMgBW/1735672228111.jpg",
+    description: "A stylish landing page emphasizing typography with the Nunito font",
+    link: "https://i.ibb.co/B20WMgBW/1735672228111.jpg",
+  },
+  {
+    id: 6,
+    image: "https://i.ibb.co/5pT9K0C/1735672227593.jpg",
+    description: "A minimal and well-structured custom icon set designed for versatile use",
+    link: "https://i.ibb.co/5pT9K0C/1735672227593.jpg",
+  },
+  {
+    id: 7,
+    image: "https://i.ibb.co/gLzrKsLG/1735672227459.jpg",
+    description: "A sleek landing page design showcasing modern electric bikes with a clean layout",
+    link: "https://i.ibb.co/gLzrKsLG/1735672227459.jpg",
+  },
+  {
+    id: 8,
+    image: "https://i.ibb.co/hxKcf4w7/1735672228217.jpg ",
+    description: "A bold and dynamic landing page highlighting Nike products with strong visuals",
+    link: "https://i.ibb.co/hxKcf4w7/1735672228217.jpg ",
+  },
+];

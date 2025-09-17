@@ -11,7 +11,7 @@ import PortFolio from "./components/PortFolio.js";
 import Contact from "./components/Contact.js";
 import Footer from "./components/Footer.js";
 import Loading from "./loading.js";
-import { LANDINGPAGES, FIREBASEPROJECTS } from "./data/projects";
+import { LANDINGPAGES, FIREBASEPROJECTS,FIGMADESIGNS } from "./data/projects";
 import style from "./page.module.css";
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -53,6 +53,7 @@ export default function Home() {
             <PortFolio
               landingPages={LANDINGPAGES}
               firebaseProjects={FIREBASEPROJECTS}
+              figmaDesigns={FIGMADESIGNS}
             />
             <Contact />
             <Footer />
