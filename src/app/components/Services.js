@@ -74,7 +74,7 @@ function Services() {
               <h4>Chrome DevTools</h4>
             </div>
             <div className="skill-item">
-              <img width="35px" height="35px" src="/imgs/Vite.js.png" />
+              <img width="35px" height="35px" src="/imgs/Vite.png" />
               <h4>Vite</h4>
             </div>
             <div className="skill-item">
