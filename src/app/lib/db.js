@@ -11,7 +11,13 @@ const connectDB = async () => {
   if (mongoose.connection.readyState >= 1) {
     return;
   }
-  await mongoose.connect(uri, { dbName: 'portfolio' });
+  await mongoose.connect(uri, {
+    dbName: 'portfolio', useNewUrlParser: true,
+    useUnifiedTopology: true,
+    ssl: true,
+    tlsAllowInvalidCertificates: true,
+  }).then(() => console.log("✅ MongoDB connected"))
+    .catch(err => console.error("❌ Connection error:", err));;
 };
 
 export default connectDB;

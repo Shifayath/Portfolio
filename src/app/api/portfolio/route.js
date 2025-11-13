@@ -19,10 +19,13 @@ export const POST = async (request) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "shifayathkhan96@gmail.com",
-      pass: "nlticohiozzjxwxa",
-    },
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
+    },tls: {
+    rejectUnauthorized: false, // 👈 Allows self-signed certs
+  },
   });
+
 
   const mailOptions = {
     from: "PortFolio@gmail.com",
@@ -109,10 +112,10 @@ export const POST = async (request) => {
     await transporter.sendMail(mailOptions);
     await transporter.sendMail(thankYouMailOptions);
     await PortFolio.create({ name, email, phone, message });
-     return NextResponse.json(
-    { message: "Saved to DB successfully." },
-    { status: 200 }
-  );
+    return NextResponse.json(
+      { message: "Saved to DB successfully." },
+      { status: 200 }
+    );
   } catch (error) {
     console.log("DB Save Error:", error);
     return NextResponse.json(
