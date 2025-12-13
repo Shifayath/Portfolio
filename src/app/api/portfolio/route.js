@@ -21,9 +21,9 @@ export const POST = async (request) => {
     auth: {
       user: process.env.GMAIL_USER,
       pass: process.env.GMAIL_PASS,
-    },tls: {
-    rejectUnauthorized: false, // 👈 Allows self-signed certs
-  },
+    }, tls: {
+      rejectUnauthorized: false, // 👈 Allows self-signed certs
+    },
   });
 
 
@@ -109,8 +109,30 @@ export const POST = async (request) => {
   };
 
   try {
+    await connectDB();
+  } catch (error) {
+    console.error("Database connection error:", error);
+    return NextResponse.json(
+      { error: "Database connection failed." },
+      { status: 500 }
+    );
+  }
+
+  try {
     await transporter.sendMail(mailOptions);
     await transporter.sendMail(thankYouMailOptions);
+  } catch (error) {
+    console.error("Email sending error:", error);
+    // Don't return here, maybe we still want to save to DB? 
+    // Or return error if email is critical. Usually for a contact form, if email fails, we might still want to save.
+    // But let's return error for now to be safe and notify user.
+    return NextResponse.json(
+      { error: "Failed to send email: " + error.message },
+      { status: 500 }
+    );
+  }
+
+  try {
     await PortFolio.create({ name, email, phone, message });
     return NextResponse.json(
       { message: "Saved to DB successfully." },
@@ -119,7 +141,7 @@ export const POST = async (request) => {
   } catch (error) {
     console.log("DB Save Error:", error);
     return NextResponse.json(
-      { error: error.message || "Something went wrong." },
+      { error: "Database save failed: " + error.message },
       { status: 500 }
     );
   }

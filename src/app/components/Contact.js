@@ -2,7 +2,7 @@
 import React from 'react';
 import { Form, Input, Button, Typography } from 'antd';
 import { message as antdMessage } from 'antd';
-import 'antd/dist/reset.css'; 
+import 'antd/dist/reset.css';
 import './style.css';
 
 function Contact() {
@@ -130,11 +130,11 @@ function Contact() {
               <Input.TextArea rows={4} maxLength={500} />
             </Form.Item>
 
-            <Form.Item>
+            <div>
               <Button type="primary" htmlType="submit" style={{ width: '100%' }}>
                 Submit
               </Button>
-            </Form.Item>
+            </div>
           </Form>
         </div>
       </div>

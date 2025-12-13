@@ -1,5 +1,5 @@
 "use client";
-import { HiDocumentDownload } from "react-icons/hi"; 
+import { HiDocumentDownload } from "react-icons/hi";
 import React from "react";
 import "./style.css";
 function About() {
@@ -23,12 +23,12 @@ function About() {
               to deliver high-quality solutions.
             </p>
             <a
-              href="/resume.pdf"
+              href="/Shifayath_khan_CV.pdf"
               download
               className="btn-rounded btn btn-outline-primary mt-4"
-              style={{display:"flex",alignItems:"flex",justifyContent:"center",width:"max-content"}}
+              style={{ display: "flex", alignItems: "flex", justifyContent: "center", width: "max-content" }}
             >
-              Download CV <HiDocumentDownload size={25}/>
+              Download CV <HiDocumentDownload size={25} />
             </a>
           </div>
         </div>
